@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1535398910">
+  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
+  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="GPIO_demo.msk"/>
+  <File Type="RDI-RDI" Name="GPIO_demo.vdi"/>
+  <File Type="BG-BIT" Name="GPIO_demo.bit"/>
+  <File Type="BG-DRC" Name="GPIO_demo.drc"/>
+  <File Type="BG-BGN" Name="GPIO_demo.bgn"/>
+  <File Type="BG-BIN" Name="GPIO_demo.bin"/>
+  <File Type="BITSTR-RBT" Name="GPIO_demo.rbt"/>
+  <File Type="BITSTR-NKY" Name="GPIO_demo.nky"/>
+  <File Type="BITSTR-BMM" Name="GPIO_demo_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="GPIO_demo.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="GPIO_demo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="GPIO_demo.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="GPIO_demo.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GPIO_demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="GPIO_demo_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="GPIO_demo_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GPIO_demo_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="GPIO_demo_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="GPIO_demo_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="GPIO_demo_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="GPIO_demo_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GPIO_demo_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="GPIO_demo_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GPIO_demo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GPIO_demo_postroute_physopt_bb.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/GPIO_Demo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/GPIO_Demo.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/MouseCtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/MouseCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/MouseDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/MouseDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/Ps2Interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/Ps2Interface.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/UART_TX_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/UART_TX_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/hdl/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="GPIO_demo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../src/constraints/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1535398890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">4</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">15</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design">
+      <Option Id="Directive">5</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

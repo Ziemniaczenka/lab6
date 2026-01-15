@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.env.windows": {
+        "ROOT_DIR": "${workspaceFolder}",
+        "SIM_BUILD_DIR": "${workspaceFolder}\\build\\sim",
+        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\apps\\Xilinx\\2025.1\\Vivado\\bin;${workspaceFolder}\\tools;${env:PATH}"
+    }
+}
