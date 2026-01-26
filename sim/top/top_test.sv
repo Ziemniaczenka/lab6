@@ -5,22 +5,22 @@ module top_test;
 /* Local variables and signals */
 
 logic clk, rst_n;
-logic [3:0] digit0, digit1, digit2, digit3;
-logic [3:0] sseg_an;
-logic [6:0] sseg_ca;
+logic [7:0] din;
+logic tx, tx_buf, tx_done_tick_buf;
 
 
 /* Submodules placement */
 
-top dut (
+top  #(
+    .S_TICK(1),
+    .START_TICK(200)
+    ) dut (
     .clk,
     .rst_n,
-    .digit0,
-    .digit1,
-    .digit2,
-    .digit3,
-    .sseg_an,
-    .sseg_ca
+    .din,
+    .tx,
+    .tx_buf,
+    .tx_done_tick_buf
 );
 
 
@@ -44,14 +44,19 @@ end
 /* Test */
 
 initial begin
-    digit0 = 4'h0;
-    digit1 = 4'h1;
-    digit2 = 4'h2;
-    digit3 = 4'h3;
+    din = 0;
+
 
     reset();
-
-    #20000ns;
+    #4000ns
+    din = 8'hFF;
+    #4000ns
+    din = 8'h67;
+    #4000ns
+    din = 8'h65;
+    #4000ns
+    din = 8'hA9;
+    #8000ns;
 
     $finish;
 end

@@ -9,11 +9,9 @@ set xdc_files {
 }
 
 set sv_files {
-    ../rtl/ring_counter.sv
     ../rtl/counter.sv
-    ../rtl/sseg.sv
-    ../rtl/sseg/hex2sseg.sv
-    ../rtl/sseg/sseg_mux.sv
+    ../rtl/uart/uart_tx.sv
+    ../rtl/uart/uart_tx_out_buffer.sv
     ../rtl/top.sv
     rtl/top_basys3.sv
 }

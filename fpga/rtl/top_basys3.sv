@@ -1,20 +1,18 @@
 module top_basys3 (
     input wire clk,
     input wire btnC,
-    input wire [15:0] sw,
-    output wire [6:0] seg, //MA BYĆ JAK W XDC
-    output wire [3:0] an
+    input wire [7:0] sw,
+    output wire RsTx,
+    output wire [1:0] JB
 );
 
 top u_top(
     .clk(clk),
     .rst_n(!btnC),
-    .digit0(sw[15:12]),
-    .digit1(sw[11:8]),
-    .digit2(sw[7:4]),
-    .digit3(sw[3:0]),
-    .sseg_ca(seg),
-    .sseg_an(an)
+    .din(sw),
+    .tx(RsTx),
+    .tx_buf(JB[0]),
+    .tx_done_tick_buf(JB[1])
 );
 
 endmodule

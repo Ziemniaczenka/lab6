@@ -1,1 +1,0 @@
-sv work ../../rtl/counter.sv ../../rtl/ring_counter.sv ../../rtl/top.sv top_test.sv
