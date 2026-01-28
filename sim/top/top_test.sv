@@ -12,8 +12,8 @@ logic tx, tx_buf, tx_done_tick_buf;
 /* Submodules placement */
 
 top  #(
-    .S_TICK(1),
-    .START_TICK(200)
+    .S_TICK(1), //Divides clock frequency by 2.
+    .START_TICK(400)
     ) dut (
     .clk,
     .rst_n,

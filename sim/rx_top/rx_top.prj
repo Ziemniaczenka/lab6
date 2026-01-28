@@ -1,0 +1,1 @@
+sv work ../../rtl/counter.sv ../../rtl/ring_counter.sv ../../rtl/sseg/hex2sseg.sv ../../rtl/sseg/sseg_mux.sv ../../rtl/sseg.sv ../../rtl/uart/uart_rx.sv ../../rtl/uart/uart_rx_buffer.sv ../../rtl/rx_top.sv rx_top_test.sv

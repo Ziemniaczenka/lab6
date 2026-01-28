@@ -1,5 +1,6 @@
 module rx_top #(
-    parameter S_TICK = 54
+    parameter S_TICK = 54,
+    parameter DISPLAY_COUNTER = 250000
 )(
   input logic clk,
   input logic rst_n,
@@ -45,7 +46,7 @@ uart_rx_buffer #(
     .dout(buffer_out)
 );
 counter #(
-    .VALUE_MAX(250000) //100mhz, 250 000 for 100Hz
+    .VALUE_MAX(DISPLAY_COUNTER) //100mhz, 250 000 for 100Hz
 ) u_display_counter (
     .clk,
     .rst_n,
